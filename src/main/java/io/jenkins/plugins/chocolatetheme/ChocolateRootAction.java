@@ -6,7 +6,6 @@ import hudson.model.UnprotectedRootAction;
 import jakarta.servlet.ServletException;
 import java.io.IOException;
 import java.util.Objects;
-
 import jenkins.model.Jenkins;
 import org.kohsuke.stapler.StaplerRequest2;
 import org.kohsuke.stapler.StaplerResponse2;
