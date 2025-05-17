@@ -1,0 +1,106 @@
+[data-theme=chocolate], .app-theme-picker__picker[data-theme=chocolate] {
+  --background: hsl(30, 18%, 11%);
+  --accent-color: oklch(0.88 0.1773 87.37);
+
+  /* Text */
+  --text-color: oklch(0.98 0.0236 83.86);
+  --text-color-secondary: color-mix(in oklch, color-mix(in srgb, var(--background) 40%, var(--text-color)), var(--accent-color) 15%);
+
+  /* Breadcrumbs - Deprecated */
+  --breadcrumbs-bar-background: var(--background);
+
+  /* Tabs - Deprecated */
+  --tabs-background: var(--card-border-color);
+  --tabs-item-background--selected: oklch(
+      from var(--text-color-secondary) l c h / 0.175
+  );
+
+  /* Table */
+  --table-background: var(--card-border-color);
+  --table-border-color: var(--card-border-color);
+
+  /* Side panel */
+  --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--card-background));
+
+  /* Form */
+  --input-color: oklch(from var(--text-color-secondary) l c h / 0.03);
+  --input-border: oklch(from var(--text-color-secondary) l c h / 0.3);
+  --input-border-hover: oklch(from var(--text-color-secondary) l c h / 0.4);
+
+  /* Default button */
+  --button-background: oklch(from var(--text-color-secondary) l c h / 0.075);
+  --button-background--hover: oklch(
+      from var(--text-color-secondary) l c h / 0.125
+  );
+  --button-background--active: oklch(
+      from var(--text-color-secondary) l c h / 0.175
+  );
+  --button-box-shadow--focus: oklch(
+      from var(--text-color-secondary) l c h / 0.1
+  );
+
+  /* Variables for sidebar items, card items */
+  --item-background--hover: oklch(from var(--text-color-secondary) l c h / 0.1);
+  --item-background--active: oklch(
+      from var(--text-color-secondary) l c h / 0.15
+  );
+  --item-box-shadow--focus: oklch(from var(--text-color-secondary) l c h / 0.1);
+
+  /* Card */
+  --card-background: color-mix(in srgb, var(--background) 95%, var(--text-color));
+  --card-border-color: color-mix(in srgb, var(--background) 90%, var(--text-color));
+
+  /* Colors */
+  /* Base palette to match background and accent-color theme */
+  --blue: oklch(0.60 0.16 265);
+  --brown: oklch(0.45 0.08 50);
+  --cyan: oklch(0.70 0.14 195);
+  --green: oklch(0.65 0.14 140);
+  --indigo: oklch(0.55 0.13 300);
+  --orange: oklch(0.70 0.18 75);
+  --pink: oklch(0.75 0.15 20);
+  --purple: oklch(0.65 0.15 320);
+  --red: oklch(0.60 0.18 25);
+  --yellow: oklch(0.85 0.16 100);
+
+  /* Derived variants (light/dark) */
+  --light-blue: oklch(from var(--blue) calc(l + 0.2) c h);
+  --dark-blue: oklch(from var(--blue) calc(l - 0.2) c h);
+  --light-brown: oklch(from var(--brown) calc(l + 0.2) c h);
+  --dark-brown: oklch(from var(--brown) calc(l - 0.2) c h);
+  --light-cyan: oklch(from var(--cyan) calc(l + 0.2) c h);
+  --dark-cyan: oklch(from var(--cyan) calc(l - 0.2) c h);
+  --light-green: oklch(from var(--green) calc(l + 0.2) c h);
+  --dark-green: oklch(from var(--green) calc(l - 0.2) c h);
+  --light-indigo: oklch(from var(--indigo) calc(l + 0.2) c h);
+  --dark-indigo: oklch(from var(--indigo) calc(l - 0.2) c h);
+  --light-orange: oklch(from var(--orange) calc(l + 0.2) c h);
+  --dark-orange: oklch(from var(--orange) calc(l - 0.2) c h);
+  --light-pink: oklch(from var(--pink) calc(l + 0.2) c h);
+  --dark-pink: oklch(from var(--pink) calc(l - 0.2) c h);
+  --light-purple: oklch(from var(--purple) calc(l + 0.2) c h);
+  --dark-purple: oklch(from var(--purple) calc(l - 0.2) c h);
+  --light-red: oklch(from var(--red) calc(l + 0.2) c h);
+  --dark-red: oklch(from var(--red) calc(l - 0.2) c h);
+  --light-yellow: oklch(from var(--yellow) calc(l + 0.2) c h);
+  --dark-yellow: oklch(from var(--yellow) calc(l - 0.2) c h);
+
+  /* Tooltips */
+  --tooltip-box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.025),
+      inset var(--jenkins-border--subtle-shadow),
+      0 0 8px 2px rgba(0, 0, 20, 0.05),
+      0 0 1px 1px rgba(0, 0, 20, 0.025),
+      0 10px 20px rgba(0, 0, 20, 0.2);
+
+  /* Dropdowns */
+  --dropdown-box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.025),
+      inset var(--jenkins-border--subtle-shadow),
+      0 0 8px 2px rgba(0, 0, 20, 0.05),
+      0 0 1px 1px rgba(0, 0, 20, 0.025),
+      0 10px 20px rgba(0, 0, 20, 0.3);
+
+  /* Render native browser elements in dark mode */
+  color-scheme: dark;
+}
