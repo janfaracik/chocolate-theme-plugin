@@ -39,5 +39,10 @@ public class ChocolateTheme extends AbstractChocolateTheme {
         public String getDisplayName() {
             return "Chocolate";
         }
+
+        @Override
+        public String getIconClassName() {
+            return "symbol-chocolate plugin-chocolate-theme";
+        }
     }
 }
